@@ -1,0 +1,28 @@
+{
+  "image": "Test/00000.png",
+  "true_label": 16,
+  "variant": "ds",
+  "seed": 42,
+  "top5": [
+    {
+      "class_id": 16,
+      "softmax_score": 0.9979707598686218
+    },
+    {
+      "class_id": 25,
+      "softmax_score": 0.0002792585582938045
+    },
+    {
+      "class_id": 34,
+      "softmax_score": 0.00026505536516197026
+    },
+    {
+      "class_id": 37,
+      "softmax_score": 0.00022385023476090282
+    },
+    {
+      "class_id": 11,
+      "softmax_score": 0.00018923549214378
+    }
+  ]
+}

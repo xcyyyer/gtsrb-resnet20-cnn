@@ -1,0 +1,21 @@
+{
+  "checkpoint_audit": "12 best.pt strict loads and finite forward passes passed",
+  "preprocessing_comparison": "clean, dark, blur tensors exactly equal original data.Signs on 13 synthetic RGB images of varying sizes",
+  "inference_comparison": "accuracy, macro_f1, macro_recall and cross entropy match original run.evaluate within 1e-9 on the synthetic images",
+  "figure_export": "all 8 planned final evaluation PNG/PDF figures generated successfully on temporary synthetic metrics; those outputs were discarded",
+  "notebook": "all 5 code cells parsed successfully",
+  "not_yet_run": "Kaggle reproduction notebook end-to-end execution and online GitHub/Gitee publication",
+  "official_test": "All 36 evaluations completed on CPU; 12630 samples each; all 454680 predictions independently recounted.",
+  "raw_image_labels": "All 12630 downloaded Test.csv labels match the fixed original manifest",
+  "lr_supplement": {
+    "audit_status": "passed",
+    "runs": 3,
+    "epochs_per_run": 80,
+    "total_epochs": 240,
+    "validation_selected_lr": 0.1,
+    "scope": "post-hoc validation-only sensitivity; original architecture and test results remain unchanged",
+    "evidence": "lr_supplement/GTSRB_LR_Sensitivity/audit_verification.json",
+    "original_frozen_files_unchanged": 305,
+    "updated_notebook": "Adds recovery of Kaggle auto-expanded backups; original embedded training sources unchanged; all code cells compile. Updated recovery route not rerun end-to-end in Kaggle."
+  }
+}

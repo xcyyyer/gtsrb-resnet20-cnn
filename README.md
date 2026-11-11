@@ -1,5 +1,7 @@
 # ResNet20交通标志识别与结构消融
 
+代码仓库：https://github.com/xcyyyer/gtsrb-resnet20-cnn
+
 本项目已真实完成4种结构×种子42/10/20×80轮训练，以及12个最佳权重在官方测试集12,630张图像上的clean/dark/blur共36次评估。
 
 ## 实验结构
@@ -21,12 +23,24 @@
 
 ## 环境与安装
 
+下载仓库ZIP并解压，在包含models.py和requirements.txt的项目根目录打开终端。
+
 训练环境的完整记录位于study/runs各组的environment.json和pip_freeze.txt。训练采用Python3.13.16、PyTorch2.11.0+cu130、Tesla T4；最后一组第39轮后由Colab迁移Kaggle。此次最终推理采用Python3.12.14、PyTorch2.15.0+cpu、numpy2.3.5、batch256、workers0。跨硬件和版本不保证逐位一致。
 
 ```bash
 python -m pip install -r requirements.txt
 python data.py download --root data --source kaggle
 ```
+
+Windows若`python`指向WindowsApps入口，请使用实际解释器。已安装Python 3.12时，后续命令中的`python`可统一换为`py -3.12 -X utf8`，避免系统默认GBK编码导致JSON读取失败，例如：
+
+```powershell
+py -3.12 -X utf8 -m pip install -r requirements.txt
+py -3.12 -X utf8 audit_results.py --study study --out validation_recheck
+py -3.12 -X utf8 audit_lr_supplement.py
+```
+
+以上两项核验已实际通过。核验读取保存的日志、配置和权重，不重新训练；学习率核验还执行CPU前向检查，不重新读取原始图片计算准确率。
 
 Kaggle可直接Add Input挂载上述原始图片数据集，使用其实际根目录作为--data。完整训练结果已包含在study/runs；无需为查看结果重新训练。
 
@@ -65,13 +79,13 @@ python infer.py --checkpoint study/runs/ds_s42/best.pt --image data/Test/00000.p
 
 ## 输出文件
 
-- GTSRB_大作业报告.docx：按实验模板整理的六部分正文，保留原24张实验图与全部12组训练曲线，追加2张学习率对比图。
-- build_report.py与report_template.docx：模板版报告生成程序及版式来源；依赖固定实验JSON，可用python build_report.py重新生成报告。
+- 实验报告另行随课程作业提交。精简版保留CNN组件说明、四结构消融、三种子统计、学习率调优及场景分析；完整单组曲线仍保存在validation_analysis/figures中。
+- build_report.py与report_template.docx：原始完整版报告生成程序及版式来源；依赖固定实验JSON。精简版为另行整理的版本，运行该脚本生成的是原始完整版。
 - validation_analysis/：重建的12组验证结果、三种子统计、核验结果及16套PNG/PDF图。
 - test_evaluation/：36次评估的指标、逐图预测、逐类指标、混淆矩阵；12组条件汇总；8套PNG/PDF图。
 - study/：固定清单与原始训练日志、best.pt、last.pt、配置、环境、迁移记录。
 - GTSRB_Final_Evaluation.ipynb：Kaggle复现笔记本，内置评估源码；要求挂载最终80轮备份，不能使用39轮旧迁移包。
-- verification.json：真实执行的核验范围。
+- verification.json：交付阶段核验范围记录；其中not_yet_run为该记录生成时的状态。仓库发布状态以本文末尾说明为准；Notebook恢复分支的端到端限制仍按记录保留。
 
 原迁移包根目录的results.json只含8组且含旧值；本项目不使用那份过期汇总，以validation_analysis与test_evaluation为准。
 
@@ -108,7 +122,9 @@ python lr_supplement/supplement_source/lr_sensitivity.py --root data --out lr_re
 
 ## 仓库发布
 
-当前交付为可上传的完整工程包，尚未创建线上GitHub/Gitee仓库。新建仓库后可将本目录作为仓库根目录上传。实际仓库URL需补入报告，不能把数据集链接当作代码仓库链接。
+仓库地址：https://github.com/xcyyyer/gtsrb-resnet20-cnn
+
+仓库公开提供训练与评估源码、固定划分、主实验12组日志和best/last权重、三种子验证统计、官方测试逐图预测，以及学习率补充实验结果。原始GTSRB图片需从数据来源另行下载。实验报告中的代码仓库链接使用本地址。
 
 ## 参考
 
