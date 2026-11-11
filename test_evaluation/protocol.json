@@ -1,0 +1,26 @@
+{
+  "split": "test",
+  "samples": 12630,
+  "classes": 43,
+  "size": 32,
+  "resize": "PIL RGB then BILINEAR to 32x32",
+  "normalization": "(x/255 - 0.5)/0.5",
+  "conditions": {
+    "clean": "none",
+    "dark": "PIL ImageEnhance.Brightness factor 0.5 AFTER resize",
+    "blur": "PIL GaussianBlur radius 1 AFTER resize"
+  },
+  "checkpoint_selection": "maximum validation accuracy; first epoch in ties",
+  "seeds": [
+    42,
+    10,
+    20
+  ],
+  "variants": [
+    "baseline",
+    "ds",
+    "se",
+    "ds_se"
+  ],
+  "purpose": "Evaluate all models without training, reselection or test-driven tuning."
+}

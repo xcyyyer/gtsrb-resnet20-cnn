@@ -1,0 +1,14 @@
+{
+  "python": "3.12.14",
+  "torch": "2.15.0+cpu",
+  "numpy": "2.3.5",
+  "device": "cpu",
+  "gpu": null,
+  "batch_size": 256,
+  "workers": 0,
+  "source_sha256": {
+    "evaluate_final.py": "235e159ecbddfffbb4b005be022950bc73ec654a70a1a9572b5254894733a6aa",
+    "models.py": "3c0c878593e07702ea4873a6ec1a9c0cc6b3393e388cdeb99ff54026c805118a",
+    "data.py": "2fb9a6308e0e3a43953383549ab046b2bcbf22570f3cf12d8fe7d103d37b4ee0"
+  }
+}
