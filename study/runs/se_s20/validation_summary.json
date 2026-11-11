@@ -1,0 +1,5 @@
+{
+  "best_val_accuracy": 0.9922094508301404,
+  "completed_epochs": 80,
+  "note": "No test data used for training, checkpoint selection, or hyperparameter tuning."
+}

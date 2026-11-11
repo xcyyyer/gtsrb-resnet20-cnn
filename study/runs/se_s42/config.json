@@ -1,0 +1,16 @@
+{
+  "action": "train",
+  "root": "/content/gtsrb_data",
+  "splits": "/content/drive/MyDrive/GTSRB_ResNet20_Study_v1/splits",
+  "out": "/content/drive/MyDrive/GTSRB_ResNet20_Study_v1/runs/se_s42",
+  "variant": "se",
+  "seed": 42,
+  "epochs": 80,
+  "batch_size": 128,
+  "lr": 0.05,
+  "size": 32,
+  "workers": 2,
+  "split": "val",
+  "robust": false,
+  "device": "cuda"
+}

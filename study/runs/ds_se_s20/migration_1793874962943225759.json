@@ -1,0 +1,62 @@
+{
+  "old_config": {
+    "action": "train",
+    "root": "/content/gtsrb_data",
+    "splits": "/content/drive/MyDrive/GTSRB_ResNet20_Study_v1/splits",
+    "out": "/content/drive/MyDrive/GTSRB_ResNet20_Study_v1/runs/ds_se_s20",
+    "variant": "ds_se",
+    "seed": 20,
+    "epochs": 80,
+    "batch_size": 128,
+    "lr": 0.05,
+    "size": 32,
+    "workers": 2,
+    "split": "val",
+    "robust": false,
+    "device": "cuda"
+  },
+  "new_config": {
+    "action": "train",
+    "root": "/kaggle/input/datasets/meowmeowmeowmeowmeow/gtsrb-german-traffic-sign",
+    "splits": "/kaggle/working/study/splits",
+    "out": "/kaggle/working/study/runs/ds_se_s20",
+    "variant": "ds_se",
+    "seed": 20,
+    "epochs": 80,
+    "batch_size": 128,
+    "lr": 0.05,
+    "size": 32,
+    "workers": 2,
+    "split": "val",
+    "robust": false,
+    "device": "cuda"
+  },
+  "changed_paths": {
+    "root": [
+      "/content/gtsrb_data",
+      "/kaggle/input/datasets/meowmeowmeowmeowmeow/gtsrb-german-traffic-sign"
+    ],
+    "out": [
+      "/content/drive/MyDrive/GTSRB_ResNet20_Study_v1/runs/ds_se_s20",
+      "/kaggle/working/study/runs/ds_se_s20"
+    ],
+    "splits": [
+      "/content/drive/MyDrive/GTSRB_ResNet20_Study_v1/splits",
+      "/kaggle/working/study/splits"
+    ]
+  },
+  "manifest_hashes": {
+    "train": "e513ec0114426d5b6a744e499b42f169064ff5152055ada3a7f611f14fb641fe",
+    "val": "0353104339cdb38107222c379841c734f40511e87c46190580044a819a3838db"
+  },
+  "torch": "2.11.0+cu130",
+  "python": "3.13.16",
+  "gpu": "Tesla T4",
+  "source_sha256": {
+    "migration_config.py": "49bdff69bb7d62f761f3617b2199ac04aea4692adf419cdf3575ddc715fff886",
+    "models.py": "3c0c878593e07702ea4873a6ec1a9c0cc6b3393e388cdeb99ff54026c805118a",
+    "infer.py": "52861e3560e56899e17123bcb02c05ca030b4673318d85442d13c76fb06d8fdf",
+    "run.py": "3b77c39b395b1e368b66247f0950c0c90244f5f14741915283601b02726b9a39",
+    "data.py": "2fb9a6308e0e3a43953383549ab046b2bcbf22570f3cf12d8fe7d103d37b4ee0"
+  }
+}
