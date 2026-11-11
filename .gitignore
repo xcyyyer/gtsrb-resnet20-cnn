@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+.venv/
+data/
+reproduction_runs/
+report_qa/
+*.tmp
+*.part
