@@ -1,0 +1,18 @@
+{
+  "python": "3.13.16",
+  "torch": "2.11.0+cu130",
+  "numpy": "2.1.3",
+  "device": "cuda",
+  "gpu": "Tesla T4",
+  "source_sha256": {
+    "data.py": "2fb9a6308e0e3a43953383549ab046b2bcbf22570f3cf12d8fe7d103d37b4ee0",
+    "run.py": "3b77c39b395b1e368b66247f0950c0c90244f5f14741915283601b02726b9a39",
+    "models.py": "3c0c878593e07702ea4873a6ec1a9c0cc6b3393e388cdeb99ff54026c805118a",
+    "lr_sensitivity.py": "fec2bd7e4d0ee2943f0e13979091ad531ca99555710470c7ced5fa4aaf1e3620",
+    "migration_config.py": "49bdff69bb7d62f761f3617b2199ac04aea4692adf419cdf3575ddc715fff886"
+  },
+  "train_val_hashes": {
+    "train": "e513ec0114426d5b6a744e499b42f169064ff5152055ada3a7f611f14fb641fe",
+    "val": "0353104339cdb38107222c379841c734f40511e87c46190580044a819a3838db"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "complete": true,
+  "per_lr": [
+    {
+      "initial_lr": 0.01,
+      "seed": 42,
+      "completed_epochs": 80,
+      "best_epoch": 53,
+      "best_val_accuracy_pct": 98.23754789272031,
+      "val_macro_f1_at_best_accuracy_pct": 97.5787334985658,
+      "val_loss_at_best_accuracy": 0.0882361059520741,
+      "last_val_accuracy_pct": 98.18646232439336,
+      "logged_train_minutes": 48.81180566138334,
+      "checkpoint_sha256": "f9d6e1ac87e7363b492e60321f655817605b0c0acdb048212dd892bae3b58e63",
+      "history_sha256": "608029474a1ef18a1a1e070e60d39408745bf2d1436881fe1528a9ca18a79a8c"
+    },
+    {
+      "initial_lr": 0.05,
+      "seed": 42,
+      "completed_epochs": 80,
+      "best_epoch": 66,
+      "best_val_accuracy_pct": 99.28480204342274,
+      "val_macro_f1_at_best_accuracy_pct": 98.72526180651978,
+      "val_loss_at_best_accuracy": 0.037505052442332945,
+      "last_val_accuracy_pct": 99.23371647509579,
+      "logged_train_minutes": 34.79679142856665,
+      "checkpoint_sha256": "f0a467889c72be267f068681b20f6ec982c8bb2f3a39d2a28640aab856d35e72",
+      "history_sha256": "942306e006ece10f04d0a4a2ea312c40c9ae7be55ebae346df7fd0435ffbd688"
+    },
+    {
+      "initial_lr": 0.1,
+      "seed": 42,
+      "completed_epochs": 80,
+      "best_epoch": 70,
+      "best_val_accuracy_pct": 99.52745849297573,
+      "val_macro_f1_at_best_accuracy_pct": 99.33557510786997,
+      "val_loss_at_best_accuracy": 0.018746429603275667,
+      "last_val_accuracy_pct": 99.48914431673053,
+      "logged_train_minutes": 32.59847955874993,
+      "checkpoint_sha256": "b3daa59cdfb4918de40e05a8d6dda7584ef1219f7ad7d22a571ee5825fd34e79",
+      "history_sha256": "c29351c608697f899f8324c4324593353004ff9ca3bd69387ccbdb3f92b046b3"
+    }
+  ],
+  "validation_selected_lr": 0.1,
+  "note": "真实训练输出。单种子验证集补充实验，不替换原四结构测试结果，不代表跨种子的稳定最优值。"
+}

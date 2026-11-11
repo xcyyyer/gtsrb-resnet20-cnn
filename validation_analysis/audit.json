@@ -1,0 +1,122 @@
+{
+  "runs": 12,
+  "epochs_per_run": 80,
+  "total_logged_epochs": 960,
+  "counts": {
+    "train": 31379,
+    "val": 7830,
+    "test": 12630
+  },
+  "train_val_track_overlap": 0,
+  "manifest_sha256": {
+    "train": "e513ec0114426d5b6a744e499b42f169064ff5152055ada3a7f611f14fb641fe",
+    "val": "0353104339cdb38107222c379841c734f40511e87c46190580044a819a3838db",
+    "test": "3110a6d095cd25c7d7a19d3739dc99d2dc699ecabb1b05d54acc81aed0d046c9"
+  },
+  "checkpoint_checks": [
+    {
+      "run": "baseline_s42",
+      "best_epoch": 54,
+      "best_sha256": "a889a64552fbc75443ac50022383281841f019773f512314efa3bedca930410f",
+      "last_sha256": "e5a8baa21ffe4f24387dfb8148ff6aa320efba68ae1d108e0942f205423a3484",
+      "strict_load": true,
+      "finite_forward": true
+    },
+    {
+      "run": "baseline_s10",
+      "best_epoch": 66,
+      "best_sha256": "e7a09f486aae0bbe51b9327ade4befff7090e7fe139c9607b10f947eb7590a8c",
+      "last_sha256": "464b962435075f3fb9fd480bb84eeb7ab96d6d93e3eb2ccf1d0cd9d350476dd4",
+      "strict_load": true,
+      "finite_forward": true
+    },
+    {
+      "run": "baseline_s20",
+      "best_epoch": 66,
+      "best_sha256": "9f796d5b41de51d2eecad179dad81a07f7ce74f71943449dea3364ceb53db149",
+      "last_sha256": "76f200d2781081e6af234a58b695f7369b0f25fe6d606b2f59ef172d0ff3387f",
+      "strict_load": true,
+      "finite_forward": true
+    },
+    {
+      "run": "ds_s42",
+      "best_epoch": 65,
+      "best_sha256": "5a11951ea383b5eb07136313cb15c0d9c5181326cff4c2cb5cc4bb1bd2a28e89",
+      "last_sha256": "8515297386a8ee44b34a053753a4349cce029ae3c6e27220ce81009bcf1c0a28",
+      "strict_load": true,
+      "finite_forward": true
+    },
+    {
+      "run": "ds_s10",
+      "best_epoch": 74,
+      "best_sha256": "21e7158067e4a055ea22beb217fd59f5958d6844d1ab406c4497f4f89c273ae8",
+      "last_sha256": "a5ae10d35a35f526d70dda466e23eb8e52649762babc5de08594cdf284c2e094",
+      "strict_load": true,
+      "finite_forward": true
+    },
+    {
+      "run": "ds_s20",
+      "best_epoch": 50,
+      "best_sha256": "a7321e61a3697ad931f7ff4dd219e94d5e3fd3757a7707b613e9eac7d69cbaa6",
+      "last_sha256": "4f32a1493a91677c4766dc3c0ddd3668e1e59214d54a6a4117a4e7320ec71e8c",
+      "strict_load": true,
+      "finite_forward": true
+    },
+    {
+      "run": "se_s42",
+      "best_epoch": 75,
+      "best_sha256": "d6cc9e404752e835962664bd935d9c56cc1bddaee8aef5a9cf9188be4cb534ef",
+      "last_sha256": "948c525172659c0d240bd7386becaa308450faae2795599dc5040d89f5087d2e",
+      "strict_load": true,
+      "finite_forward": true
+    },
+    {
+      "run": "se_s10",
+      "best_epoch": 66,
+      "best_sha256": "d6492c7abf187deef68a7f9f869cadd5a1e0f4f969ba4c20335fd334f9ddecae",
+      "last_sha256": "1d0859ed9dfaeda4cefe5e1c8603ca6e0f4cb9eab6fffd958365349e5a45b5cf",
+      "strict_load": true,
+      "finite_forward": true
+    },
+    {
+      "run": "se_s20",
+      "best_epoch": 79,
+      "best_sha256": "b9a5e02d1b52aed76532296bed993fbfe590494b408a363722580391843e3771",
+      "last_sha256": "48dc7ea96a3aad22da572b40e789998d03c08d2ca6df4e8fc6707bf172fb9242",
+      "strict_load": true,
+      "finite_forward": true
+    },
+    {
+      "run": "ds_se_s42",
+      "best_epoch": 67,
+      "best_sha256": "215244c19fb25d37f24bf5eb9a6625329aad92c06a3db59951a51f05848e742d",
+      "last_sha256": "590ee6b8ba278f01412d20b6a0af1db997ddd8a0a05a035b0acc9f295e445c67",
+      "strict_load": true,
+      "finite_forward": true
+    },
+    {
+      "run": "ds_se_s10",
+      "best_epoch": 79,
+      "best_sha256": "2f7fded2c257817d6e40abfdabbefa9295dd0762a2cae1a1d6b56e167b4eface",
+      "last_sha256": "6ae4b87767a8b97e69b66044c2982d7b4e3a0695b6e433bc7acb0d5b36977781",
+      "strict_load": true,
+      "finite_forward": true
+    },
+    {
+      "run": "ds_se_s20",
+      "best_epoch": 78,
+      "best_sha256": "447a352218f81140f7e68041d3c89f8d759f85f0760fb67fa951ebd95e5b2bf4",
+      "last_sha256": "d89d6cade8a9d6591fb160d2e9de112b75c7766044988b470ca1602aaed1f05d",
+      "strict_load": true,
+      "finite_forward": true
+    }
+  ],
+  "torch_for_audit": "2.15.0+cpu",
+  "test_evaluation_present": true,
+  "warning": "Source results.json/results.csv are stale (8 entries); rebuilt from all 12 histories.",
+  "limitations": [
+    "Raw images are obtained separately; image-level near-duplicate search was not performed.",
+    "A finite zero-input forward pass verifies weight loading; held-out results are stored separately in test_evaluation.",
+    "DS+SE seed20 resumed across platforms; logged times are not a controlled speed benchmark."
+  ]
+}

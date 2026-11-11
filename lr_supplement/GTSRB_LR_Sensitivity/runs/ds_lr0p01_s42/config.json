@@ -1,0 +1,16 @@
+{
+  "action": "train",
+  "root": "/kaggle/input/datasets/meowmeowmeowmeowmeow/gtsrb-german-traffic-sign",
+  "splits": "/kaggle/working/GTSRB_LR_tools/splits",
+  "out": "/kaggle/working/GTSRB_LR_Sensitivity/runs/ds_lr0p01_s42",
+  "variant": "ds",
+  "seed": 42,
+  "epochs": 80,
+  "batch_size": 128,
+  "lr": 0.01,
+  "size": 32,
+  "workers": 2,
+  "split": "val",
+  "robust": false,
+  "device": "cuda"
+}
